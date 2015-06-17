@@ -6,9 +6,11 @@
 
 - **$compile:**
   - workaround for IE11 MutationObserver
+  解决 IE11 MutationObserver 开启后出现的问题
   ([f3b1d0b7](https://github.com/angular/angular.js/commit/f3b1d0b723298a5f8ea21d0704405649cce1b5fc),
    [#11781](https://github.com/angular/angular.js/issues/11781))
   - prevent exception when using `watch` as isolated scope binding property in Firefox
+  防止使用 `watch` as isolated scope binding property 时在 Firefox 中出现异常
   ([a6339d30](https://github.com/angular/angular.js/commit/a6339d30d1379689da5eec9647a953f64821f8b0),
    [#11627](https://github.com/angular/angular.js/issues/11627))
 - **$location:** do not get caught in infinite digest in IE9 when redirecting in `$locationChangeSuccess`
